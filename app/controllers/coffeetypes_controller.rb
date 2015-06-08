@@ -1,0 +1,8 @@
+class CoffeeTypesController < ApplicationController
+
+
+
+
+
+
+end
