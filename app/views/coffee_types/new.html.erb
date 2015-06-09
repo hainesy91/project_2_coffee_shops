@@ -1,0 +1,14 @@
+<%= form_for @coffeetype do |form| %>
+
+  <%= form.label :name %>
+  <%= form.text_field :name %>
+
+  <%= form.label :origin %>
+  <%= form.text_field :origin %>
+
+  <%= form.label :price %>
+  <%= form.text_field :price %>
+
+  <%= form.submit 'Submit' %>
+
+<% end %>

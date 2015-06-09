@@ -7,3 +7,5 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 
+c1 = CoffeeType.create(name: 'Espresso', origin: 'Guatamala', price: '2.0')
+c2 = CoffeeType.create(name: 'Flat White', origin: 'Mexico', price: '3.0')
