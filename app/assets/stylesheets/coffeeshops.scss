@@ -1,6 +1,18 @@
 $font-stack:    Helvetica, sans-serif;
 
-#home {
+body {
   font: 100% $font-stack;
   background-image: url("http://www.hdwallpaperscool.com/wp-content/uploads/2015/02/coffee-black-high-resolution-wallpaper-download-coffee-images.jpeg");
+}
+
+#search {
+  text-align: center;
+  margin-top: 0 auto;
+  margin-bottom: 0 auto;
+}
+
+#home {
+  font-size: 25px;
+  text-align: left;
+  color: white;
 }
