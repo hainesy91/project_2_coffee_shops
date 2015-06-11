@@ -1,11 +1,15 @@
-<%= link_to 'Add a Coffee Shop', new_coffee_shop_path %>
 
-<% @coffeeshops.each do |coffeeshop| %>
-  <p><%= link_to coffeeshop.name, coffee_shop_path(coffeeshop) %></p>
+
+<%= form_tag("/search", method: :get) do %>
+  <%= label_tag(:q, "Search for:") %>
+  <%= text_field_tag(:q) %>
+  <%= submit_tag("Search") %>
+  <%= label_tag %>
 <% end %>
-
-<%= link_to 'Add a Coffee Type', new_coffee_type_path %>
-
-<% @coffeetypes.each do |coffeetype| %>
-  <p><%= link_to coffeetype.name, coffee_type_path(coffeetype) %></p>
-<% end %>
+>> User.ransack(first_name_cont: 'Rya').result.to_sql
+    => SELECT "users".* FROM "users"  WHERE ("users"."first_name" LIKE '%Rya%')
+<!-- 
+    <form class="coffee_shop_search" id="coffee_shop_search" action="/search" accept-charset="UTF-8" method="get">
+      <input type="search" name="q[address]" id="q_address" />
+      <input type="submit" name="commit" value="Search" />
+    </form> -->

@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'search/index'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -8,11 +10,13 @@ Rails.application.routes.draw do
 
   resources :homes
 
-  resources :coffee_shops do
+  resources :coffee_shops 
   resources :reviews
-  end
 
   resources :coffee_types
+
+  resources :search
+  #get '/search', to: 'search#index'
   
 
   # Example of regular route:

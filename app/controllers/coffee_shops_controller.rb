@@ -3,6 +3,7 @@ class CoffeeShopsController < ApplicationController
   def index 
     @coffeeshops = CoffeeShop.all
     @coffeetypes = CoffeeType.all
+    @reviews = Review.all 
   end
 
   def new
@@ -21,6 +22,8 @@ class CoffeeShopsController < ApplicationController
 
   def show
     @coffeeshop = CoffeeShop.find(params[:id])
+    #Not sure if I need to do the same for reviews to get the reviews to display on the coffee shop page?...
+    #@coffeetype = CoffeeType.find(params[:id])
   end
 
 end

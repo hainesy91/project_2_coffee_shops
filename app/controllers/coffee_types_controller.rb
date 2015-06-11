@@ -12,7 +12,7 @@ class CoffeeTypesController < ApplicationController
     coffeetype = CoffeeType.new params[:coffee_type].permit(:name, :origin, :price)
 
     if coffeetype.save
-      redirect_to coffee_type_path(coffeetype)
+      redirect_to coffee_types_path(coffeetype)
     else
       render 'new'
     end
