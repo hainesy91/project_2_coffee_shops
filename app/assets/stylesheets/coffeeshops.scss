@@ -1,3 +1,6 @@
-// Place all the styles related to the Coffeeshops controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+$font-stack:    Helvetica, sans-serif;
+
+#home {
+  font: 100% $font-stack;
+  background-image: url("http://www.hdwallpaperscool.com/wp-content/uploads/2015/02/coffee-black-high-resolution-wallpaper-download-coffee-images.jpeg");
+}

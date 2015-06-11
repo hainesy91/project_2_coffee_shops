@@ -7,7 +7,6 @@ class HomesController < ApplicationController
      #------------------------------------------------ Search Bar
      @search = CoffeeShop.search(params[:q])
      @coffeeshopsearch = @search.result
-
   end
 
   def home
