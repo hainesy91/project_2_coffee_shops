@@ -10,10 +10,9 @@ Rails.application.routes.draw do
 
   resources :homes
 
-  resources :coffee_shops 
-  resources :reviews
-
-  resources :coffee_types
+  resources :coffee_shops do
+    resources :reviews, :coffee_types
+  end 
 
   resources :search
   #get '/search', to: 'search#index'

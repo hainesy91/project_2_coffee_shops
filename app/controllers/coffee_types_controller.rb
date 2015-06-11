@@ -5,17 +5,20 @@ class CoffeeTypesController < ApplicationController
   end
 
   def new
+    @coffeeshop = CoffeeShop.find(params[:coffee_shop_id])
     @coffeetype = CoffeeType.new
   end
 
   def create
-    coffeetype = CoffeeType.new params[:coffee_type].permit(:name, :origin, :price)
+    coffeeshop = CoffeeShop.find(params[:coffee_shop_id])
+    coffeetype = coffeeshop.coffee_types.create params[:coffee_type].permit(:name, :origin, :price)
+    redirect_to coffee_shop_path(coffeeshop)
 
-    if coffeetype.save
-      redirect_to coffee_types_path(coffeetype)
-    else
-      render 'new'
-    end
+    # if coffeetype.save
+    #   redirect_to coffee_shop_path(coffeeshop)
+    # else
+      # render 'new'
+    # end
   end
 
   def show

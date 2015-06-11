@@ -4,8 +4,13 @@
 
 <h2><%= @coffeeshop.phone_number %></h2>
 
+<%= link_to 'Add a Coffee Type', new_coffee_shop_coffee_type_path(@coffeeshop) %>
 
-
+<% @coffeeshop.coffee_types.each do |coffeetype| %>
+ <p><%= coffeetype.name %></p> 
+ <p><%= coffeetype.origin %></p> 
+ <p><%= coffeetype.price %></p> 
+<% end %>
 
 
 
