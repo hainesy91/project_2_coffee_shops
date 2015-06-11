@@ -12,6 +12,12 @@
  <p><%= coffeetype.price %></p> 
 <% end %>
 
+<%= link_to 'Add a Review', new_coffee_shop_review_path(@coffeeshop) %>
+
+<% @coffeeshop.reviews.each do |review| %>
+  <p><%= review.review %></p>
+<% end %>
+
 
 
 
