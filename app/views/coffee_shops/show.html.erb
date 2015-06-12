@@ -4,7 +4,7 @@
 
 <h2><%= @coffeeshop.phone_number %></h2>
 
-<%= link_to 'Add a Coffee Type', new_coffee_shop_coffee_type_path(@coffeeshop) %>
+<nav id="add_coffee"><%= link_to 'Add a Coffee Type', new_coffee_shop_coffee_type_path(@coffeeshop) %></nav>
 
 <% @coffeeshop.coffee_types.each do |coffeetype| %>
  <p><%= coffeetype.name %></p> 
@@ -12,7 +12,7 @@
  <p><%= coffeetype.price %></p> 
 <% end %>
 
-<%= link_to 'Add a Review', new_coffee_shop_review_path(@coffeeshop) %>
+<nav id="add_review"><%= link_to 'Add a Review', new_coffee_shop_review_path(@coffeeshop) %></nav>
 
 <% @coffeeshop.reviews.each do |review| %>
   <p><%= review.review %></p>
