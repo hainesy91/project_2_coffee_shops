@@ -5,6 +5,20 @@ body {
   background-image: url("http://www.hdwallpaperscool.com/wp-content/uploads/2015/02/coffee-black-high-resolution-wallpaper-download-coffee-images.jpeg");
 }
 
+nav {
+  height: 60px;
+  background-color: rgba(72, 138, 83, 0.5); 
+  a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
 #search {
   text-align: center;
   margin-top: 0 auto;
