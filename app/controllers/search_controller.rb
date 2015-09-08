@@ -6,7 +6,4 @@ class SearchController < ApplicationController
     
   end
 
-  def search
-  end
-
 end
