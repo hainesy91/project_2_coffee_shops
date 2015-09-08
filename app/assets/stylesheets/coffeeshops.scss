@@ -9,7 +9,15 @@ nav {
   height: 60px;
   background-color: rgba(72, 138, 83, 0.5);
   vertical-align: top; 
+  color: white;
+  #brand-name {
+    font-size: 35px;
+    display: inline-block;
+    margin: 0px;
+    padding: 10px 0 0 30%;
+  }
   a {
+    font-size: 25px;
     color: white;
     text-decoration: none;
     display: inline-block;
@@ -19,31 +27,30 @@ nav {
   a:hover {
     text-decoration: underline;
   }
-  #brand-name {
-    display: inline-block;
-    margin: 0px;
-    padding: 10px 0 0 30%;
-    //width: 85%;
-    //text-align: center;
-  }
 }
 
 #search {
+  display: inline-block;
   text-align: center;
-  margin-top: 0 auto;
-  margin-bottom: 0 auto;
-}
-
-#home {
-  font-size: 25px;
-  text-align: left;
-  color: white;
+  margin: 115px auto;
+  width: 100%;
 }
 
 #search_results {
   text-align: center;
   font-family: Helvetica;
   color: rgb(49, 117, 255)
+}
+
+form {
+  label {
+    font-size: 25px;
+    color: black;
+  }
+  input {
+    font-size: 25px;
+    color: black;
+  }
 }
 
 #list {
