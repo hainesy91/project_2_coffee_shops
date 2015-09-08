@@ -7,15 +7,24 @@ body {
 
 nav {
   height: 60px;
-  background-color: rgba(72, 138, 83, 0.5); 
+  background-color: rgba(72, 138, 83, 0.5);
+  vertical-align: top; 
   a {
     color: white;
     text-decoration: none;
     display: inline-block;
     padding: 15px;
+    width: 10%;
   }
   a:hover {
     text-decoration: underline;
+  }
+  #brand-name {
+    display: inline-block;
+    margin: 0px;
+    padding: 10px 0 0 30%;
+    //width: 85%;
+    //text-align: center;
   }
 }
 
