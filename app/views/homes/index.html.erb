@@ -9,7 +9,11 @@
 </div>
 
 <div id="coffeeshop-list">
-  
+  <% @latest.each do |shop| %>
+    <div class="featured">
+      <img src="<%= shop.image %>" class="featured-img">
+    </div>
+  <% end %>
 </div>
 
 

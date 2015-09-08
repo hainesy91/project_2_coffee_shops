@@ -60,4 +60,17 @@ form {
 #add {
   text-align: center;
 }
+#coffeeshop-list {
+  width: 100%;
+  text-align: center;
+  .featured {
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    margin: 10px;
+    .featured-img{
+      width: 100%;
+    }
+  }
+}
 
