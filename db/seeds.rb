@@ -9,3 +9,7 @@
 
 c1 = CoffeeType.create(name: 'Espresso', origin: 'Guatamala', price: '2.0')
 c2 = CoffeeType.create(name: 'Flat White', origin: 'Mexico', price: '3.0')
+
+c3 = CoffeeShop.create(name: 'Dose Espresso', address: '18 Long Acre', phone_number: '0204484302' )
+
+puts 'Seeded!'
