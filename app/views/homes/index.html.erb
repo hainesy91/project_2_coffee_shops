@@ -12,6 +12,9 @@
   <% @latest.each do |shop| %>
     <div class="featured">
       <img src="<%= shop.image %>" class="featured-img">
+      <h3 class="featured-name"><%= shop.name %></h3>
+      <h4 class="featured-address"><%= shop.address %></h4>
+      <%= link_to "Read More", coffee_shop_path(shop), class: 'read-more' %>
     </div>
   <% end %>
 </div>
