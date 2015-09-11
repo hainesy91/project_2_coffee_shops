@@ -1,7 +1,7 @@
 $font-stack: Helvetica, sans-serif;
 
 body {
-  font: 100% $font-stack;
+  font-family: 'Roboto', sans-serif;
   background-image: url("http://www.hdwallpaperscool.com/wp-content/uploads/2015/02/coffee-black-high-resolution-wallpaper-download-coffee-images.jpeg");
 }
 
@@ -34,6 +34,7 @@ nav {
   text-align: center;
   margin: 115px auto;
   width: 100%;
+  font-style: italic;
 }
 
 #search_results {
@@ -75,7 +76,8 @@ form {
       margin-bottom: 10px;
     }
     .featured-img{
-      width: 100%;
+      width: 90%;
+      height: 70%;
     }
   }
 }
