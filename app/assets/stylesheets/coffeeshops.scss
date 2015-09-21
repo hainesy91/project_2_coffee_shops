@@ -70,7 +70,7 @@ form {
     width: 30%;
     text-align: center;
     padding: 15px;
-    border: 4px solid #8AC007;
+    border: 4px solid rgb(21, 176, 189);
     border-radius: 25px;
     .read-more {
       border: 4px solid #eb7f00;
@@ -84,10 +84,10 @@ form {
       min-height: 250px;
     }
     .featured-name{
-      color: rgb(232, 146, 49)
+      color: #8AC007
     }
     .featured-address{
-      color: rgb(19, 46, 149)
+      color: #8AC007
     }
   }
 }
