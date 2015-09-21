@@ -1,8 +1,12 @@
-<h1><%= @coffeeshop.name %></h1>
+<div class="add_coffee" >
 
-<h2><%= @coffeeshop.address %></h2>
+  <h1><%= @coffeeshop.name %></h1>
 
-<h2><%= @coffeeshop.phone_number %></h2>
+  <h2><%= @coffeeshop.address %></h2>
+
+  <h2><%= @coffeeshop.phone_number %></h2>
+
+</div>  
 
 <nav id="add_coffee"><%= link_to 'Add a Coffee Type', new_coffee_shop_coffee_type_path(@coffeeshop) %></nav>
 
