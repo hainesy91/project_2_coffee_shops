@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <%= image_tag("title.png", :alt => "title") %>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -11,6 +10,7 @@
 
   <nav id="home">
     <%= link_to 'Home', homes_path %>
+    <%= image_tag("title.png", :alt => "title") %> 
     <!--<h2 id="brand-name">Central Perks</h2> -->
   </nav>
 
