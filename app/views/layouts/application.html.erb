@@ -9,10 +9,13 @@
 <body>
 
   <nav id="home">
-    <%= link_to 'Home', homes_path %>
-    <%= image_tag("title.png", :alt => "title") %> 
+    <!--<%= link_to 'Home', homes_path %> -->
     <!--<h2 id="brand-name">Central Perks</h2> -->
   </nav>
+
+  <div class="logo">
+    <img src="/title.jpg" alt="title.jpg" />
+  </div>
 
 
 <%= yield(:search) %>
