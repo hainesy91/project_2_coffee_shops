@@ -30,7 +30,22 @@ nav {
 
 .logo {
   text-align:center;
-  
+  background-color: #B08C51;
+  height: 120px;
+  // .title-img {
+  //   width: 100%;
+  // }
+  h1 {
+    color: white;
+    font-size: 60px;
+    margin: 0;
+    padding-top: 10px;
+  }
+  h2 {
+    color: blue;
+    font-style: italic;
+    margin: 0;
+  }
 }
 
 #search {
