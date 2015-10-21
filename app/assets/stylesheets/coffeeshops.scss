@@ -48,11 +48,32 @@ nav {
   }
 }
 
-#search {
-  display: inline-block;
-  text-align: center;
-  margin: 115px auto;
-  width: 100%;
+#search-bar {
+  min-height: 750px;
+
+  #search {
+    display: inline-block;
+    text-align: center;
+    margin: 115px auto;
+    width: 100%;
+    form {
+      line-height: 325px;
+      label {
+        font-size: 25px;
+        font-family: Helvetica, sans-serif;
+        color: blue;
+        font-style: italic;
+      }
+      input {
+        font-size: 25px;
+        color: black;
+        width: 450px;
+      }
+      input[type="submit"] {
+        width: 100px;
+      }
+    } 
+  }
 }
 
 #search_results {
@@ -61,18 +82,6 @@ nav {
   color: rgb(49, 117, 255)
 }
 
-form {
-  label {
-    font-size: 25px;
-    font-family: Helvetica, sans-serif;
-    color: blue;
-    font-style: italic;
-  }
-  input {
-    font-size: 25px;
-    color: black;
-  }
-}
 
 #list {
   text-align: center;
