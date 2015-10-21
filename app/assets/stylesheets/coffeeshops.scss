@@ -50,7 +50,8 @@ nav {
 
 #search-bar {
   min-height: 750px;
-
+  position: relative;
+  text-align: center;
   #search {
     display: inline-block;
     text-align: center;
@@ -71,8 +72,19 @@ nav {
       }
       input[type="submit"] {
         width: 100px;
+        color: #3D2D14;
+        border-radius: 8px;
+        background-color: #B08C51;
+        border: none;
       }
-    } 
+    }
+  }
+  .fa-chevron-down {
+    font-size: 100px;
+    color: white;
+    position: relative;
+    bottom: 0;
+    vertical-align: bottom;
   }
 }
 
