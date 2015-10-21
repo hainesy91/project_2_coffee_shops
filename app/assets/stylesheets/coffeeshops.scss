@@ -2,7 +2,6 @@ $font-stack: Helvetica, sans-serif;
 
 body {
   font-family: 'Roboto', sans-serif;
-  background-image: url("http://www.hdwallpaperscool.com/wp-content/uploads/2015/02/coffee-black-high-resolution-wallpaper-download-coffee-images.jpeg");
 }
 
 nav {
@@ -52,6 +51,7 @@ nav {
   min-height: 750px;
   position: relative;
   text-align: center;
+  background-image: url("http://www.hdwallpaperscool.com/wp-content/uploads/2015/02/coffee-black-high-resolution-wallpaper-download-coffee-images.jpeg");
   #search {
     display: inline-block;
     text-align: center;
@@ -107,14 +107,16 @@ nav {
 #coffeeshop-list {
   width: 100%;
   text-align: center;
-  background: rgba(0, 0, 0, 0.5);
+  background-color: #B08C51;
+  padding-top: 40px;
+  padding-bottom: 40px;
   .featured {
     display: inline-block;
     width: 30%;
     text-align: center;
     padding: 15px;
-    border: 4px solid rgb(79, 52, 27);
-    border-radius: 25px;
+    // border: 4px solid rgb(79, 52, 27);
+    // border-radius: 25px;
     .read-more {
       border: 4px solid #eb7f00;
       border-radius: 25px;

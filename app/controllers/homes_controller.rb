@@ -7,7 +7,7 @@ class HomesController < ApplicationController
      #------------------------------------------------ Search Bar
      @search = CoffeeShop.search(params[:q])
      @coffeeshopsearch = @search.result
-     @latest = CoffeeShop.last(3)
+     @latest = CoffeeShop.last(6)
   end
 
   def home
