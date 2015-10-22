@@ -6,6 +6,9 @@
 
   <h2><%= @coffeeshop.phone_number %></h2>
 
+  <div class="picture">
+    <%= image_tag @coffeeshop.image %>
+  </div>
 </div>  
 
 <nav id="add_coffee"><%= link_to 'Add a Coffee Type', new_coffee_shop_coffee_type_path(@coffeeshop) %></nav>
