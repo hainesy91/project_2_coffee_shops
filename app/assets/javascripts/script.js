@@ -3,7 +3,9 @@ $(document).ready(function(){
     $('html,body').animate({ scrollTop: $("#coffeeshop-list").offset().top}, 'slow');
   })
 
-  $()
+  $('.featured').hover(function(){
+    $(this).css("background", "blue");
+  })
 });
 
 
