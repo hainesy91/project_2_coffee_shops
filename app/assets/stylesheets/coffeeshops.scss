@@ -48,12 +48,13 @@ nav {
 }
 
 #search-bar {
-  min-height: 750px;
+  min-height: 550px;
   position: relative;
   text-align: center;
   background-image: url("http://www.hdwallpaperscool.com/wp-content/uploads/2015/02/coffee-black-high-resolution-wallpaper-download-coffee-images.jpeg");
   h2 {
-    
+    margin-top: -150px;
+    color: white;
   }
   #search {
     display: inline-block;
@@ -84,7 +85,7 @@ nav {
   }
   .fa-chevron-down {
     font-size: 100px;
-    color: white;
+    color: rgb(72, 138, 83);
     position: relative;
     bottom: 0;
     vertical-align: bottom;
