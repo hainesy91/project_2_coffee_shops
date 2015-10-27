@@ -15,6 +15,13 @@
     <% end %>
   </div>
 </div>
+
+
+
+
+<% @coffeeshops.each do |coffeeshop| %>
+  <%= link_to coffeeshop.name, coffee_shop_path(coffeeshop) %>
+<% end %>
  
 
 
