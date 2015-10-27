@@ -1,8 +1,12 @@
-<div id="search_results"><h1>Coffee Search Results</h1></div>
+<div id="search_results">
+  <h1>Coffee Search Results</h1>
+</div>
 
-<div id="list">
+<div id="coffee_shop_list">
   <% @search_results.each do |coffeeshop| %>
-    <p><%= link_to coffeeshop.name, coffee_shop_path(coffeeshop) %></p>
+    <div class="list_result">
+      <p><%= link_to coffeeshop.name, coffee_shop_path(coffeeshop) %></p>
+    </div>
   <% end %>
 </div>
 
