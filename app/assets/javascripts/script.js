@@ -5,7 +5,9 @@ $(document).ready(function(){
 
   $('.featured').hover(function(){
     $(this).css("background", "blue");
-  })
+  }, function(){
+    $(this).css("background-color", "#B08C51");
+  });
 });
 
 
