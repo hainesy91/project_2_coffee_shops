@@ -13,12 +13,14 @@
 
 <div id="coffeeshop-list">
   <% @latest.each do |shop| %>
-    <div class="featured">
-      <img src="<%= shop.image %>" class="featured-img">
-      <h2 class="featured-name"><%= shop.name %></h3>
-      <h3 class="featured-address"><%= shop.address %></h4>
-      <%= link_to "Read More", coffee_shop_path(shop), class: 'read-more' %>
-    </div>
+   <a href="<%= shop.name %>">
+      <div class="featured">
+        <img src="<%= shop.image %>" class="featured-img">
+        <h2 class="featured-name"></h2>
+        <h3 class="featured-address"><%= shop.address %></h3>
+        <%= link_to "Read More", coffee_shop_path(shop), class: 'read-more' %>
+      </div>
+    </a>
   <% end %>
 </div>
 
