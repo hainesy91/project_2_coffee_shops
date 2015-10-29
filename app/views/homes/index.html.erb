@@ -13,12 +13,11 @@
 
 <div id="coffeeshop-list">
   <% @latest.each do |shop| %>
-   <a href="<%= shop.name %>">
+    <a href="http://localhost:3000/coffee_shops/<%= shop.id %>">
       <div class="featured">
         <img src="<%= shop.image %>" class="featured-img">
         <h2 class="featured-name"></h2>
         <h3 class="featured-address"><%= shop.address %></h3>
-        <%= link_to "Read More", coffee_shop_path(shop), class: 'read-more' %>
       </div>
     </a>
   <% end %>
