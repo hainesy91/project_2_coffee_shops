@@ -3,11 +3,12 @@
 
   <div id="coffee_shop_list">
     <% @search_results.each do |coffeeshop| %>
-      <div class="list_result">
-        <p><%= link_to coffeeshop.name, coffee_shop_path(coffeeshop) %></p>
-      </div>
+      <p><%= link_to coffeeshop.name, coffee_shop_path(coffeeshop) %></p>
+      <h3 class="featured-address"><%= coffeeshop.address %></h3>
     <% end %>
   </div>
+
+  <h2 class="suggestion">Don't see the Coffee Shop you're looking for? Why don't you add it!</h2>
 
   <div id="add">
     <%= link_to 'Add a Coffee Shop', new_coffee_shop_path %>
