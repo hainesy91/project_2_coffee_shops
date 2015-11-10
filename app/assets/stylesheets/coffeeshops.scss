@@ -148,10 +148,21 @@ nav {
 
 #search_results_list {
 
-
+  .search_results_item {
+    padding: 1px;
+    margin: 30px;
+  }
+  .search_title {
+    color: white;
+  }
+  .search-address {
+    color: blue;
+  }
   .search-img {
-    width: 450px;
-    height: 200px;
+    width: 400px;
+    height: 170px;
+    margin-top: -80px;
+    color: rgba(0, 0, 0, 0.2);
   }
 }
 

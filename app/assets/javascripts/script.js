@@ -8,6 +8,12 @@ $(document).ready(function(){
   }, function(){
     $(this).css("background-color", "#B08C51");
   });
+
+  $( window ).load(function() {
+    $('.search_results_item').slideUp("slow", function() {
+      //Animation Complete
+    })
+  })
 });
 
 

@@ -4,9 +4,9 @@
   <div id="search_results_list">
     <% @search_results.each do |coffeeshop| %>
       <div class="search_results_item">
+        <img src="<%= coffeeshop.image %>" class="search-img">
         <p class="search_title"><%= link_to coffeeshop.name, coffee_shop_path(coffeeshop) %></p>
         <p class="search-address"><%= coffeeshop.address %></p>
-        <img src="<%= coffeeshop.image %>" class="search-img">
       </div>
     <% end %>
   </div>
